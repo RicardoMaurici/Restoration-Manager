@@ -1,4 +1,5 @@
 <?php
+  include ('db/connect.php');
   include('../include/header.html');
   include('../include/menu.html');
 ?>
@@ -8,15 +9,19 @@
 </div>
 <div class="panel-body">
 
-<form class="form-horizontal" role="form" method="post" action="#">
+<form class="form-horizontal" role="form" method="post" action="db/dbSection.php">
 
 <div class="form-group">
 <label for="lbCar" class="col-sm-2 control-label">Car</label>
 <div class="col-sm-2">
 	<select name="sectionCar" class="form-control" id="slcar"> <!--cars from DB-->
-		<option>Type 1</option>
-		<option>Type 2</option>
-		<option>Type 3</option>
+		<?php
+			$sql="SELECT*FROM car";
+			$result=mysql_query($sql);
+			while($row=mysql_fetch_array($result)){
+		?>
+		<option value=<?php echo $row['plate'];?>><?php echo $row['model']; ?></option>
+		<?php } ?>
 	</select>
 </div>
 </div>

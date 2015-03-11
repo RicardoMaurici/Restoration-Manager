@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `car` (
-  `plate` varchar(7) NOT NULL,
+  `plate` varchar(8) NOT NULL,
   `model` varchar(50) NOT NULL,
   `brand` varchar(50) NOT NULL,
   `year` int(4) NOT NULL,
@@ -59,7 +59,7 @@ CREATE TABLE IF NOT EXISTS `part` (
 
 CREATE TABLE IF NOT EXISTS `section` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `plate` varchar(7) NOT NULL,
+  `plate` varchar(8) NOT NULL,
   `description` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=1 ;
