@@ -8,17 +8,17 @@
 </div>
 <div class="panel-body">
 
-<form class="form-horizontal" role="form" method="post" action="#">
+<form class="form-horizontal" role="form" method="post" action="db/dbCar.php">
 
 <div class="form-group">
 <label for="lbmodel" class="col-sm-2 control-label">Model</label>
 <div class="col-sm-2">
-	<input name="carModel" type="text" class="form-control" id="idtiniins" required>
+	<input name="carModel" type="text" class="form-control" required>
 </div>
 <div class="col-sm-5">
 <label for="lbbrand" class="col-sm-2 control-label">Brand</label>
 <div class="col-sm-5">
-	<input name="carBrand" type="text" class="form-control" id="idtterins" required>
+	<input name="carBrand" type="text" class="form-control" required>
 </div>
 </div>
 </div>
@@ -26,7 +26,7 @@
 <div class="form-group">
 <label for="lbplatet" class="col-sm-2 control-label">Plate</label>
 <div class="col-sm-2">
-	<input name="carPlate" type="text" class="form-control" >
+	<input name="carPlate" type="text" class="form-control" required>
 </div>
 <div class="col-sm-5">
 <label for="lbyear" class="col-sm-2 control-label">Year</label>
